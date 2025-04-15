@@ -46,4 +46,12 @@ Resources
 - Install Jenkins (macOS)
     > https://www.jenkins.io/download/lts/macos/
 
+---
+
+1. Download / Clone code
+2. Open in VSCode
+3. Terminal > Install Playwright
+4. Select N for not overwrite playwright.config.ts
+5. May need to remove added .spec and .ts files
+6. fsevents.node file error, can be moved to Bin.. Test unaffected, but best to clean not include node_modules in upload
 
