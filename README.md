@@ -45,6 +45,8 @@ Resources
     > https://brew.sh/
 - Install Jenkins (macOS)
     > https://www.jenkins.io/download/lts/macos/
+      xx Jenkins not supported on macOS 12
+    > Switching to Github CI/CD
 
 ---
 
@@ -53,5 +55,5 @@ Resources
 3. Terminal > Install Playwright
 4. Select N for not overwrite playwright.config.ts
 5. May need to remove added .spec and .ts files
-6. fsevents.node file error, can be moved to Bin.. Test unaffected, but best to clean not include node_modules in upload
+6. Run Test: npx playwright test
 
