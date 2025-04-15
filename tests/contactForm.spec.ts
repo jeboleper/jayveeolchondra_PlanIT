@@ -14,7 +14,7 @@ test.describe('Contact Form Tests', () => {
 // 5. Validate errors are gone                      //
 //////////////////////////////////////////////////////
 
-  test.only('Test Case 1 - Home Page to Contact Page, Verify Messages', async ({ page }) => {
+  test('Test Case 1 - Home Page to Contact Page, Verify Messages', async ({ page }) => {
     const home = new HomePage(page);
     const contact = new ContactPage(page);
 
