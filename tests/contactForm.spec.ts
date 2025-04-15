@@ -14,7 +14,7 @@ test.describe('Contact Form Tests', () => {
 // 5. Validate errors are gone                      //
 //////////////////////////////////////////////////////
 
-  test('Test Case 1 - Home Page to Contact Page, Verify Messages', async ({ page }) => {
+  test.only('Test Case 1 - Home Page to Contact Page, Verify Messages', async ({ page }) => {
     const home = new HomePage(page);
     const contact = new ContactPage(page);
 
@@ -24,7 +24,7 @@ test.describe('Contact Form Tests', () => {
     await contact.clickSubmit();
     await contact.expectErrorMessagesVisible();
 
-    await contact.fillMandatoryFields('John', 'Doe', generateRandomEmail(), 'Test message');
+    await contact.fillMandatoryFields('Jayvee', 'Olchondra', generateRandomEmail(), 'You are Hired! Start next week');
     await contact.expectNoErrors();
   });
 
